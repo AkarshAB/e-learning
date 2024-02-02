@@ -1,0 +1,103 @@
+.aboutHome {
+  height: auto;
+}
+
+.aboutHome #heading {
+  text-align-last: left;
+  padding: 20px;
+}
+
+.flexSB {
+  align-items: center;
+}
+
+.aboutHome .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.aboutHome .right {
+  padding: 10px 10px;
+}
+
+.aboutHome .items {
+  margin-top: 0px;
+}
+
+.aboutHome .item {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.text>p {
+  font-size: 14px;
+}
+
+.aboutHome .img {
+  width: 200px;
+}
+
+.aboutHome img {
+  width: 70px;
+  height: 70px;
+}
+
+.aboutHome .item h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.aboutHome .item:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+}
+
+.awrapper {
+  background-image: url('../../../public/images/awrapper.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+}
+
+.awrapper .box {
+  padding-top: 50px;
+  padding-inline: 15px;
+}
+
+.awrapper img {
+  margin-right: 30px;
+}
+
+.awrapper h3 {
+  font-size: 30px;
+}
+
+.awrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aboutHome .flexSB {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.aboutHome .flexSB.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutHome .flexSB:not(.scrolled) {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
